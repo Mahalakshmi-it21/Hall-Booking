@@ -16,3 +16,5 @@ yarn-error.log*
 uploads/
 dist/
 coverage/
+
+echo "backend/serviceAccountKey.json" >> .gitignore
