@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=PT+Sans+Narrow:wght@400;700&family=Signika+Negative&display=swap');
+
+:root {
+  --background-1: #f8fafc;
+  --background-2: #ffffff;
+  --button: #4285f4;
+  --button-hover: #3367d6;
+  --text: #333;
+  --border: #e6e6e6;
+  --table-hover: rgba(112, 112, 112, 0.25);
+}
+
+* {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-1);
+  color: var(--text);
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-2);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-1);
+}
+
+h1, h2, h3, p, label {
+  color: var(--text);
+}

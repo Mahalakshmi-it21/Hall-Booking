@@ -1,0 +1,132 @@
+.adminDashboardLayout {
+  display: flex;
+}
+
+.adminContentContainer {
+  flex: 1;
+  margin-left: 270px;
+  padding: 30px;
+  background-color: var(--background-1);
+}
+
+.adminWhiteCard {
+  background: var(--background-2);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.adminProfileContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.bellIcon img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.profileAvatar img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left : -10px;
+  cursor: pointer;
+}
+
+.text{
+  position: relative;
+  top: 5px;
+  left: -11px;
+}
+
+.logoutMenu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.logoutMenu.visible {
+  display: block;
+}
+
+.logoutMenu button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  text-align: left;
+}
+
+.logoutMenu button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tileCarousel {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tilesWrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 10px;
+}
+
+.tile {
+  flex: 1 1 30%;
+  height: 150px;
+  background: #a1a0a0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.arrowLeft img,
+.arrowRight img {
+  width: 20px;  /* Reduce width */
+  height: 20px; /* Reduce height */
+  padding: 5px; /* Optional: Adjust spacing */
+  border-radius: 50%;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: -25px; /* Adjust positioning */
+}
+
+.arrowRight {
+  position: absolute;
+  right: -25px; /* Adjust positioning */
+}
+
+.tileImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

@@ -1,0 +1,174 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: whitesmoke;
+  color: #333;
+}
+
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  padding: 20px;
+}
+
+/* Card Styling */
+.login-card {
+  background: #ffffff;
+  width: 350px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Logo */
+.login-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s;
+}
+
+/* Title Text */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.portal-title {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-input {
+  width: 87%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+/* Center and style login button */
+.login-btn {
+  width:82%;
+  padding: 10px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px; /* Reduce space */
+}
+
+.login-btn:hover {
+  background: #3367d6;
+}
+
+/* OR Separator */
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #414040;
+  text-transform: uppercase;
+}
+
+.separator .line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+
+
+/* Google Icon */
+.google-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Footer Note */
+.login-note {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.google-signin-btn {
+  width: 100%;
+  height: 40px; /* Reduced height */
+  background: url("../assets/google.png") no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: block;
+  text-indent: -9999px; /* Hides text but keeps accessibility */
+  background-color: transparent; /* Prevent disappearing effect */
+}
+
+/* Fix the disappearing issue on hover */
+.google-signin-btn:hover,
+.google-signin-btn:focus {
+  background: url("../assets/google.png") no-repeat center;
+  background-size: contain;
+  background-color: transparent; /* Ensures the image stays */
+} 
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; /* ✅ Ensure same width as email field */
+}
+
+.password-input {
+  width: 87%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  position : relative;
+  left: 19px;
+}
+
+.password-toggle {
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}

@@ -1,0 +1,35 @@
+.sidebar {
+  background-color: var(--background-2);
+  min-width: 250px;
+  height: 100vh;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: fixed;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-logo {
+  width: 85px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar li:hover {
+  background-color: var(--button-hover);
+  color: white;
+}

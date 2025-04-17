@@ -1,0 +1,131 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.content-container {
+  flex: 1;
+  margin-left: 270px;
+  padding: 30px;
+  background-color: var(--background-1);
+}
+
+.white-card {
+  background: var(--background-2);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.bell-icon img{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+.profile-avatar img {
+  width: 45px;
+  height: 45px;
+  left : 10px;
+  cursor: pointer;
+}
+.profile-img {
+  position: relative;
+  top: 5px;
+  left: 30px;
+}
+.username{
+    position: relative;
+    top: 7px;
+}
+.logout-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 2; /* Ensures it appears above the tiles */
+  display: none;
+}
+
+.logout-menu.visible {
+  display: block;
+}
+
+.logout-menu button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  text-align: left;
+}
+
+.logout-menu button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.tile-carousel {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tiles-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 10px;
+}
+
+.tile {
+  flex: 1 1 30%;
+  height: 150px;
+  background: #a1a0a0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.arrow {
+  background : white;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  animation: ease-in;
+}
+
+.tile-image {
+  width: 100%; /* Makes the image take full width of the tile */
+  height: auto;
+  border-radius: 8px; /* Optional: for rounded corners */
+}

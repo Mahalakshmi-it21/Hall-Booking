@@ -1,0 +1,26 @@
+.notifications-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.notification-item.unread {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.notification-item.read {
+    background-color: #e0e0e0;
+}
+
+.notification-item:hover {
+    background-color: #dcdcdc;
+}
